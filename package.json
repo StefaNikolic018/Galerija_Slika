@@ -1,0 +1,25 @@
+{
+  "name": "galerija_slika",
+  "version": "1.0.0",
+  "description": "Galerija slika (login,register,komentarisanje)",
+  "main": "app.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "express-ejs-layouts": "^2.5.0",
+    "mongoose": "^5.7.13",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "nodemon": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js"
+    , "dev": "nodemon app.js"
+  },
+  "author": "stefanikolic",
+  "license": "ISC"
+}

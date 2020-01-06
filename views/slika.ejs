@@ -1,0 +1,122 @@
+<ul class="navbar">
+    <li class="nav-item col-2">
+      <a class="btn btn-secondary" href="/paja" style="color:black">Paja Jovanović</a>
+    </li>
+    <li class="nav-item col-2">
+      <a class="btn btn-secondary" href="/uros" style="color:black">Uroš Predić</a>
+    </li>
+    <li class="nav-item col-2">
+      <a class="btn btn-secondary" href="/stevan" style="color:black">Stevan Aleksić</a>
+    </li>
+    <li class="nav-item col-2">
+        <a class="btn btn-secondary" href="/djordje" style="color:black">Djordje Krstić</a>
+    </li>
+    <li class="nav-item col-2">
+      <%= name %>
+    </li>
+    <li class="nav-item col-2">
+        <a href="/users/logout" class="btn btn-danger" style="color:black"><i class="fas fa-sign-out-alt"></i>Izlogujte se</a>
+    </li>
+  </ul>
+  <%- include ('./partials/messages') %>
+  <div id="myTabContent" class="tab-content">
+            <div id="demo" class="carousel slide" data-ride="carousel" style="border: 2px white solid; background-color: black;">
+            <div class="carousel-inner" style="display:block; margin: auto;">
+              <div class="carousel-item active" >
+                <img src = "<%= slika %>" style="display:block; margin: auto;height: 600px; border: black solid 5px;" alt="Seoba Srba">
+                <div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                  <h5><%= izbor1 %></h5>
+                </div>
+              </div>
+              </div>
+            </div>
+              <h2 class="text-center" style="font-family:Georgia, 'Times New Roman', Times, serif;">Komentari:</h2>
+              <% komentari.forEach(function(komentar) { %>
+              <div class="card">
+                <div class="card-title; text-center">
+                  <% if (komentar.ocena==5){ %>
+                  <h5><b><%= komentar.izbor %> : <i class="fas fa-star" style="color:yellow;"></i><i class="fas fa-star"
+                        style="color:yellow;"></i><i class="fas fa-star" style="color:yellow;"></i><i class="fas fa-star"
+                        style="color:yellow;"></i><i class="fas fa-star" style="color:yellow;"></i></b></h5>
+                  <%} else if(komentar.ocena==4){%>
+                  <h5><b><%= komentar.izbor %> : <i class="fas fa-star" style="color: rgba(255, 217, 0, 0.884)"></i><i
+                        class="fas fa-star" style="color: gold"></i><i class="fas fa-star" style="color: gold"></i><i
+                        class="fas fa-star" style="color: gold"></i></b></h5>
+                  <%} else if (komentar.ocena==3){%>
+                  <h5><b><%= komentar.izbor %> : <i class="fas fa-star" style="color: rgba(218, 165, 32, 0.842);"></i><i
+                        class="fas fa-star" style="color: goldenrod;"></i><i class="fas fa-star" style="color: goldenrod;"></i></b>
+                  </h5>
+                  <%} else if (komentar.ocena==2){%>
+                  <h5><b><%= komentar.izbor %> : <i class="fas fa-star" style="color: rgba(181, 206, 42, 0.596);"></i><i
+                        class="fas fa-star" style="color: yellowgreen;"></i></b></h5>
+                  <%} else {%>
+                  <h5><b><%= komentar.izbor %> : <i class="fas fa-star" style="color: rgba(153, 205, 50, 0.473);"></i></b></h5>
+                  <%}%>
+                                              
+                                            </div>
+                                              <div class="card-body" style="border: 1px solid black; background-color:lightgray;">
+                                                <h6 style="color: darkcyan;"><%= komentar.ime %> (<%= komentar.email %>) :</h6>
+                  <h6 style="color: black;"><%= komentar.sadrzaj %></h6>
+                </div>
+                <div class="card-footer">
+                  <%= komentar.date%>
+                </div>
+              </div>
+              <br>
+              <% });  %>
+</div>
+
+                      <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header text-center">
+                              <h4 class="modal-title w-100 font-weight-bold">Komentar:</h4>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <form action="/komentar" method="POST">
+                              <div class="form-group">
+                                <input type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email"
+                                  value="<%=email%>">
+                                </div>
+                              <div class="form-group">
+                                <input type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="ime"
+                                  value="<%= name %>">
+                              </div>
+                              <div class="form-group">
+                                <input type="hidden" name="izbor" value="<%= izbor1 %>">
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleTextarea">Sadržaj komentara</label>
+                                <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Unesite vaš komentar"
+                                  name="sadrzaj"></textarea>
+                              </div>
+                              <fieldset class="form-group">
+                                <label for="customRange1">Ocena(1-5)</label>
+                                <p style="padding-bottom: 0px;">1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                  &nbsp; &nbsp; &nbsp; 2
+                                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                  &nbsp;3
+                                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 4
+                                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 5</p>
+                                <input type="range" min="1" max="5" value="5" class="custom-range" id="customRange1" name="ocena">
+                              </fieldset>
+                              <button type="submit" class="btn btn-primary" style="margin:auto; display:block">Pošalji</button>
+                              </fieldset>
+                            </form>
+                      
+                      
+                      
+                      
+                          </div>
+                      
+                        </div>
+                      </div>
+                      </div>
+                      
+                      <div class="text-center">
+                        <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm"
+                          style="background-color:darkcyan">Dodajte komentar</a>
+                      </div>

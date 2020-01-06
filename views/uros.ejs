@@ -1,0 +1,217 @@
+<ul class="navbar">
+  <li class="nav-item col-2">
+    <a class="btn btn-secondary" href="/paja" style="color:black">Paja Jovanović</a>
+  </li>
+  <li class="nav-item col-2">
+    <a class="btn btn-dark" href="/uros" style="color:black">Uroš Predić</a>
+  </li>
+  <li class="nav-item col-2">
+    <a class="btn btn-secondary" href="/stevan" style="color:black">Stevan Aleksić</a>
+  </li>
+  <li class="nav-item col-2">
+      <a class="btn btn-secondary" href="/djordje" style="color:black">Djordje Krstić</a>
+  </li>
+  <li class="nav-item col-2">
+    <%= name %>
+  </li>
+  <li class="nav-item col-2">
+      <a href="/users/logout" class="btn btn-danger" style="color:black"><i class="fas fa-sign-out-alt"></i>Izlogujte se</a>
+  </li>
+</ul>
+<%- include ('./partials/messages') %>
+      <div id="myTabContent" class="tab-content">
+              <div class="tab-pane fade show active" id="paja" style="border: 1px white solid;">
+                <div class="card mb-3">
+                  <h3 class="card-header; text-center">Uroš Predić</h3>
+                  <div class="card-body">
+                    <h5 class="card-title">Uz Paju Jovanovića i Djordja Krstića, bio je najveći srpski slikar realizma</h5>
+                    <h6 class="card-subtitle text-muted">Upamćen po ranim životnim radovima, gde je prikazivao realan život običnih ljudi</h6>
+                  </div>
+                  <img style="height: 475px; width: 40%; margin: auto; display: block; border:2px solid black;" src="https://www.ravnoplov.rs/wp-content/uploads/2018/06/67eac-f.jpg" alt="Uroš">
+                  <div class="card-body">
+                    <p class="card-text; text-center">Uroš Predić(Orlovat, 25. novembar/7. decembar 1857 - Beograd, 11. februar 1953)</p>
+                  </div>
+                  <h3 class="card-footer">Neka od najznačajnijih dela: </h3>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="https://upload.wikimedia.org/wikipedia/commons/e/e2/Kosovo_Maiden%2C_Uro%C5%A1_Predi%C4%87%2C_1919.jpg" target="_blank" style="text-decoration: none;">Kosovka devojka</a></li>
+                    <li class="list-group-item"><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Sveti_Sava_blagosilja_Srp%C4%8Dad%2C_Uro%C5%A1_Predi%C4%87%2C_1921.jpg/800px-Sveti_Sava_blagosilja_Srp%C4%8Dad%2C_Uro%C5%A1_Predi%C4%87%2C_1921.jpg" target="_blank" style="text-decoration: none;">Sveti Sava blagosilja Srpčad </a></li>
+                    <li class="list-group-item"><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Hercegova%C4%8Dki_begunci%2C_Uro%C5%A1_Predi%C4%87.jpg/1280px-Hercegova%C4%8Dki_begunci%2C_Uro%C5%A1_Predi%C4%87.jpg" target="_blank" style="text-decoration: none;">Hercegovački begunci</a></li>
+                  </ul>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">O umetniku: </h4>
+                    <p class="card-text">Uroš Predić je bio uz Paju Jovanovića i Djordja Krstića,
+                        najveći srpski slikar realizma. Takodje i najveća konkurencija
+                        Paji Jovanoviću. Predić je ipak najviše ostao upamćen
+                        po njegovim ranim radovima, u kojima je prikazao stvaran život
+                        običnih ljudi. Kasnije je dao veliki doprinos u crkvenom slikarstvu i portretima.
+                    </p>
+                    <a href="https://sr.wikipedia.org/wiki/%D0%A3%D1%80%D0%BE%D1%88_%D0%9F%D1%80%D0%B5%D0%B4%D0%B8%D1%9B" target="_blank" class="card-link">Izvor (Wiki) </a>
+                  </div>
+                </div>
+              </div>
+              <h2 class="text-center" style="font-family:Georgia, 'Times New Roman', Times, serif;">Galerija:</h2>
+              <p class="text-center" style="font-family:Georgia, 'Times New Roman', Times, serif;">(Klik za pristup slici)</p>
+              <div id="demo" class="carousel slide" data-ride="carousel" style="border: 2px white solid; background-color: black;">
+      
+                  <!-- Indicators -->
+                  <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                    <li data-target="#demo" data-slide-to="3"></li>
+                    <li data-target="#demo" data-slide-to="4"></li>
+                    <li data-target="#demo" data-slide-to="5"></li>
+                    <li data-target="#demo" data-slide-to="6"></li>
+                    <li data-target="#demo" data-slide-to="7"></li>
+                  </ul>
+                
+                  <!-- The slideshow -->
+                  <div class="carousel-inner" style="display:block; margin: auto;">
+                      <div class="carousel-item active">
+                          <a href="/slika/kosovkadevojka"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Kosovo_Maiden%2C_Uro%C5%A1_Predi%C4%87%2C_1919.jpg" style="display:block; margin: auto;height: 600px;"alt="Kosovka devojka">
+                          </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                            <h5>Kosovka devojka</h5>
+                            <p>Verujem najpoznatije delo pomenutog slikara</p>
+                          </div>
+                        </div>
+                    <div class="carousel-item">
+                    <a href="/slika/svetisavablagosiljasrpcad"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Sveti_Sava_blagosilja_Srp%C4%8Dad%2C_Uro%C5%A1_Predi%C4%87%2C_1921.jpg/800px-Sveti_Sava_blagosilja_Srp%C4%8Dad%2C_Uro%C5%A1_Predi%C4%87%2C_1921.jpg" alt="Sveti Sava blagosilja Srpčad" style="display:block; margin:auto;height: 600px;">
+                     </a> <div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                          <h5>Sveti Sava blagosilja Srpčad</h5>
+                          <p>Jedno od pomenutih dela crkvenog slikarstva kojem je doprineo</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <a href="/slika/veselabracajadnaimmajka"> <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Merry_brothers_1887.jpg" style="display:block; margin: auto;height: 600px;"alt="Vesela braća, jadna im majka">
+                        </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                          <h5>Vesela braća, jadna im majka</h5>
+                          <p>Tri brata pod uticajem alkohola, banče uz gajde </p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="/slika/sirocenamajcinomgrobu"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Uro%C5%A1_Predi%C4%87_-_Siro%C4%8De.jpg" style="display:block; margin: auto;height: 600px;"alt="Siroče na majčinom grobu">
+                         </a> <div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                            <h5>Siroče na majčinom grobu</h5>
+                            <p>Prikazuje čestu pojavu na krvavom Balkanu, usled okupatorskih zuluma dete ostalo bez roditelja</p>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <a href="/slika/uzburkanomore"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/St._Nikola_and_Patriarch_Lukijan.jpg/1024px-St._Nikola_and_Patriarch_Lukijan.jpg" style="display:block; margin: auto;height: 600px;"alt="Uzburkano more">
+                            </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                              <h5>Uzburkano more</h5>
+                              <p>Još jedno delo crkvenog slikarstva po kome je Uroš bio prepoznatljiv</p>
+                            </div>
+                          </div>
+                              <div class="carousel-item">
+                                <a href="/slika/decaokoguslara"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Uro%C5%A1_Predi%C4%87%2C_The_Children_around_the_Guslar%2C_1882%2C_National_Museum_of_Serbia.jpg/1024px-Uro%C5%A1_Predi%C4%87%2C_The_Children_around_the_Guslar%2C_1882%2C_National_Museum_of_Serbia.jpg" style="display:block; margin: auto;height: 600px;"alt="Deca oko guslara">
+                                </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                                    <h5>Deca oko guslara</h5>
+                                    <p>Prikaz kulturološke pojave guslanja u narodu</p>
+                                  </div>
+                                </div>
+                                <div class="carousel-item">
+                                  <a href="/slika/polivanjedodole"> <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/%22Watering_of_Dodola%22_by_Uro%C5%A1_Predi%C4%87%2C_published_in_magazine_%22Orao%22_in_1892.jpg" style="display:block; margin: auto;height: 600px;"alt="Polivanje dodole">
+                                   </a> <div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                                      <h5>Polivanje dodole</h5>
+                                      <p>Ritualni obred stare srpske vere, prizivanje kiše</p>
+                                    </div>
+                                  </div>
+                
+                  <!-- Left and right controls -->
+                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                </div>
+                </div>
+                <h2 class="text-center" style="font-family:Georgia, 'Times New Roman', Times, serif;">Komentari:</h2>
+                <% komentari.forEach(function(komentar) {
+                  if(komentar.izbor== "Uroš Predić" || komentar.izbor== "Sveti Sava blagosilja Srpčad" || komentar.izbor== "Uzburkano more" 
+                  || komentar.izbor== "Kosovka devojka" 
+                  || komentar.izbor== "Siroče na majčinom grobu" || komentar.izbor== "Deca oko guslara" || komentar.izbor== "Vesela braća, jadna im majka" 
+                  || komentar.izbor== "Polivanje dodole" ) { %>
+                <div class="card">            
+                        <div class="card-title; text-center">
+                          <% if (komentar.ocena==5){ %>
+                            <h5><b><%= komentar.izbor %> :<i class="fas fa-star" style="color:yellow;"></i><i class="fas fa-star" style="color:yellow;"></i><i class="fas fa-star" style="color:yellow;"></i><i class="fas fa-star" style="color:yellow;"></i><i class="fas fa-star" style="color:yellow;"></i></b></h5>
+                          <%} else if(komentar.ocena==4){%>
+                            <h5><b><%= komentar.izbor %> :<i class="fas fa-star" style="color: rgba(255, 217, 0, 0.884)"></i><i class="fas fa-star" style="color: rgba(255, 217, 0, 0.884)"></i><i class="fas fa-star" style="color: rgba(255, 217, 0, 0.884)"></i><i class="fas fa-star" style="color: rgba(255, 217, 0, 0.884)"></i></b></h5>
+                          <%} else if (komentar.ocena==3){%>
+                            <h5><b><%= komentar.izbor %> :<i class="fas fa-star" style="color: rgba(218, 165, 32, 0.842);"></i><i class="fas fa-star" style="color: rgba(218, 165, 32, 0.842);"></i><i class="fas fa-star" style="color: rgba(218, 165, 32, 0.842);"></i></b></h5>
+                          <%} else if (komentar.ocena==2){%>
+                            <h5><b><%= komentar.izbor %> :<i class="fas fa-star" style="color: rgba(181, 206, 42, 0.596);"></i><i class="fas fa-star" style="color: rgba(181, 206, 42, 0.596);"></i></b></h5>
+                          <%} else {%>
+                            <h5><b><%= komentar.izbor %> :<i class="fas fa-star" style="color: rgba(153, 205, 50, 0.473);"></i></b></h5>
+                          <%}%>
+                          
+                        </div>
+                          <div class="card-body" style="border: 1px solid black; background-color:lightgray;">
+                            <h6 style="color: darkcyan;"><%= komentar.ime %> (<%= komentar.email %>) :</h6> <h6 style="color: black;"><%= komentar.sadrzaj %></h6> 
+                          </div>
+                          <div class="card-footer">
+                            <%= komentar.date%>
+                          </div>
+                        </div>
+                        <br>
+                      <% }});  %>
+            <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Komentar:</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <form action="/komentar" method="POST">
+                    <div class="form-group">
+                      <input type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email"
+                        value="<%=email%>">
+                    </div>
+                    <div class="form-group">
+                      <input type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="ime"
+                        value="<%= name %>">
+                    </div>
+                      <div class="form-group">
+                        <input type="hidden" name="izbor" value="Uroš Predić">
+                      </div>
+                    <div class="form-group">
+                      <label for="exampleTextarea">Sadržaj komentara</label>
+                      <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Unesite vaš komentar"
+                        name="sadrzaj"></textarea>
+                    </div>
+                    <fieldset class="form-group">
+                      <label for="customRange1">Ocena(1-5)</label>
+                      <p style="padding-bottom: 0px;">1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; 2
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;3
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 4
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 5</p>
+                      <input type="range" min="1" max="5" value="5" class="custom-range" id="customRange1" name="ocena">
+                    </fieldset>
+                    <button type="submit" class="btn btn-primary" style="margin:auto; display:block">Pošalji</button>
+                    </fieldset>
+                  </form>
+            
+            
+            
+            
+                </div>
+            
+              </div>
+            </div>
+            </div>
+            
+            <div class="text-center">
+              <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm"
+                style="background-color:darkcyan">Dodajte komentar</a>
+            </div>
+            
+            
+          

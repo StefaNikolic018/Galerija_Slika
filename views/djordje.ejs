@@ -1,0 +1,228 @@
+<ul class="navbar">
+  <li class="nav-item col-2">
+    <a class="btn btn-secondary" href="/paja" style="color:black">Paja Jovanović</a>
+  </li>
+  <li class="nav-item col-2">
+    <a class="btn btn-secondary" href="/uros" style="color:black">Uroš Predić</a>
+  </li>
+  <li class="nav-item col-2">
+    <a class="btn btn-secondary" href="/stevan" style="color:black">Stevan Aleksić</a>
+  </li>
+  <li class="nav-item col-2">
+      <a class="btn btn-dark" href="/djordje" style="color:black">Djordje Krstić</a>
+  </li>
+  <li class="nav-item col-2">
+    <%= name %>
+  </li>
+  <li class="nav-item col-2">
+      <a href="/users/logout" class="btn btn-danger" style="color:black"><i class="fas fa-sign-out-alt"></i>Izlogujte se</a>
+  </li>
+</ul>
+<%- include ('./partials/messages') %>
+      <div id="myTabContent" class="tab-content">
+              <div class="tab-pane fade show active" id="paja" style="border: 1px white solid;">
+                <div class="card mb-3">
+                  <h3 class="card-header; text-center">Djordje Krstić</h3>
+                  <div class="card-body">
+                    <h5 class="card-title">Jedan od najpoznatijih srpskih slikara realista</h5>
+                    <h6 class="card-subtitle text-muted">Ujedno i školovani Bogoslov</h6>
+                  </div>
+                  <img style="height: 475px; width: 30%; margin: auto; display: block; border:2px solid black;" src="http://riznicasrpska.net/fotografije/Slikari/Djordje_Krstic_(1851-1907).jpg" alt="Djordje Krstić">
+                  <div class="card-body">
+                    <p class="card-text; text-center">Djordje Krstić (Stara Kanjiža, 19. april 1851-Beograd,30. oktobar 1907)</p>
+                  </div>
+                  <h3 class="card-footer">Neka od najznačajnijih dela: </h3>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="https://upload.wikimedia.org/wikipedia/commons/e/e2/%C4%90.Krsti%C4%87_Cele_Kula_1883.jpg" target="_blank" style="text-decoration: none;">Ćele Kula</a></li>
+                    <li class="list-group-item"><a href="http://riznicasrpska.net/fotografije/Umetnicke_slike/Djordje_Krstic_-_Smrt_Cara_Lazara,_1885._Vlasnistvo_Niske_eparhije.jpg" target="_blank" style="text-decoration: none;">Smrt kneza Lazara </a></li>
+                    <li class="list-group-item"><a href="https://upload.wikimedia.org/wikipedia/commons/f/f6/%C4%90.Krsti%C4%87_Na_izvoru_1882.jpg" target="_blank" style="text-decoration: none;">Na izvoru</a></li>
+                  </ul>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">O umetniku: </h4>
+                    <p class="card-text">Djordje Krstić je rodjen u Staroj Kanjiži 1851. godine gde
+                      završava osnovnu školu. Zanat izučava u Sremskim Karlovcima i u Beogradu, pa školovanje nastavlja na Bogosloviji.
+                      Završio je Likovnu akademiju u Minhenu, gde je ostao do 1883. Tu su nastala njegova dela pod uticajem
+                      nemačkog realizma: Utopljenica, Anatom, Pisac jevandjelja.
+                    </p>
+                    <a href="https://sr.wikipedia.org/wiki/%D0%82%D0%BE%D1%80%D1%92%D0%B5_%D0%9A%D1%80%D1%81%D1%82%D0%B8%D1%9B" target="_blank" class="card-link">Izvor (Wiki) </a>
+                  </div>
+                </div>
+              </div>
+              <h2 class="text-center" style="font-family:Georgia, 'Times New Roman', Times, serif;">Galerija:</h2>
+              <p class="text-center" style="font-family:Georgia, 'Times New Roman', Times, serif;">(Klik za pristup slici)</p>
+              <div id="demo" class="carousel slide" data-ride="carousel" style="border: 2px white solid; background-color: black;">
+      
+                  <!-- Indicators -->
+                  <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                    <li data-target="#demo" data-slide-to="3"></li>
+                    <li data-target="#demo" data-slide-to="4"></li>
+                    <li data-target="#demo" data-slide-to="5"></li>
+                    <li data-target="#demo" data-slide-to="6"></li>
+                    <li data-target="#demo" data-slide-to="7"></li>
+                    <li data-target="#demo" data-slide-to="8"></li>
+                    <li data-target="#demo" data-slide-to="9"></li>
+                  </ul>
+                
+                  <!-- The slideshow -->
+                  <div class="carousel-inner" style="display:block; margin: auto;">
+                      <div class="carousel-item active">
+                          <a href="/slika/celekula"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/%C4%90.Krsti%C4%87_Cele_Kula_1883.jpg" style="display:block; margin: auto;height: 600px;"alt="Ćele Kula">
+                          </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                            <h5>Ćele Kula</h5>
+                            <p>Nekada nije imala ni krov, u trenutku nastanka slike jeste, a danas se nalazi u zgradi koja je štiti od vremenskih nepogoda</p>
+                          </div>
+                        </div>
+                    <div class="carousel-item">
+                      <a href="/slika/smrtknezalazara"><img src="http://riznicasrpska.net/fotografije/Umetnicke_slike/Djordje_Krstic_-_Smrt_Cara_Lazara,_1885._Vlasnistvo_Niske_eparhije.jpg" alt="Smrt kneza Lazara" style="display:block; margin:auto;height: 600px;">
+                      </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                          <h5>Smrt kneza Lazara</h5>
+                          <p>Ovo delo je vlasnistvo Niske eparhije</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="/slika/naizvoru"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/%C4%90.Krsti%C4%87_Na_izvoru_1882.jpg" style="display:block; margin: auto;height: 600px;"alt="Na izvoru">
+                        </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                          <h5>Na izvoru</h5>
+                          <p>Mlada dama u narodnoj nošnji, na zavodniku</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                          <a href="/slika/manastirstudenica"><img src="https://upload.wikimedia.org/wikipedia/sr/8/87/Krstic_studenica.jpg" style="display:block; margin: auto;height: 600px;"alt="Manastir Studenica">
+                          </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                            <h5>Manastir Studenica</h5>
+                            <p>Kao školovani Bogoslov, inspiraciju je našao u srednjovekovnoj srpskoj arhitekturi</p>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="/slika/gruzanka"><img src="https://ocdn.eu/pulscms-transforms/1/KBjk9lMaHR0cDovL29jZG4uZXUvaW1hZ2VzL3B1bHNjbXMvWkdVN01EQV8vNzY2Nzc4YzI0YWY4NjNiY2UyNGJhZjQ0NTE2ZDFjZmEuanBlZ5GTAs0C5ACBAAE" style="display:block; margin: auto;height: 600px;"alt="Gružanka">
+                            </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                              <h5>Gružanka</h5>
+                              <p>Gružanka sa detetom, na otvaranju Narodnog muzeja oduševila svet</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                              <a href="/slika/obretanjeglavesvetogknezalazara"><img src="https://facebookreporter.files.wordpress.com/2016/06/19sobretenje-glave-kneza-lazara-c491orc491e-krstic487.jpg" style="display:block; margin: auto;height: 600px;"alt="Obretenje glave Svetog kneza Lazara">
+                              <div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                                <h5>Obretenje glave Svetog kneza Lazara</h5>
+                                <p>Inspirisan braniteljem srpskog roda,slično delo kao "Smrt kneza Lazara"</p>
+                              </div>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="/slika/utopljenica"><img src="http://slikeiprilike.com/wp-content/uploads/2018/08/.Krstic%CC%81_Utopljenica-e1533667399599.jpg" style="display:block; margin: auto;height: 600px;"alt="Utopljenica">
+                                </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                                  <h5>Utopljenica</h5>
+                                  <p>Pored dela "Pad Stalaća" jedna od stalnih postavki Narodnog muzeja</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                  <a href="/slika/padstalaca"><img src="http://slikeiprilike.com/wp-content/uploads/2018/08/viber-image1.jpg" style="display:block; margin: auto;height: 600px;"alt="Pad Stalaća">
+                                  </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                                    <h5>Pad Stalaća</h5>
+                                    <p>Pored dela "Utopljenica" jedna od stalnih postavki Narodnog muzeja</p>
+                                  </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="/slika/alegorijanaprviidrugisrpskiustanak"><img src="http://riznicasrpska.net/fotografije/Umetnicke_slike/Djordje_Krstic_-_Alegorija_na_I_i_II_srpski_ustanak_1904..jpg" style="display:block; margin: auto;height: 600px;"alt="Alegorija na I i II srpski ustanak">
+                                    </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                                      <h5>Alegorija na I i II srpski ustanak</h5>
+                                      <p>Zbirka galerije Matice srpske</p>
+                                    </div>
+                                  </div>
+                
+                  <!-- Left and right controls -->
+                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                
+                </div>
+              </div>
+              <h2 class="text-center" style="font-family:Georgia, 'Times New Roman', Times, serif;">Komentari:</h2>
+              <% komentari.forEach(function(komentar) { %>
+              <div class="card">            
+                      <div class="card-title; text-center">
+                        <% if (komentar.ocena==5){ %>
+                          <h5><b><%= komentar.izbor %> :<i class="fas fa-star" style="color:yellow;"></i><i class="fas fa-star" style="color:yellow;"></i><i class="fas fa-star" style="color:yellow;"></i><i class="fas fa-star" style="color:yellow;"></i><i class="fas fa-star" style="color:yellow;"></i></b></h5>
+                        <%} else if(komentar.ocena==4){%>
+                          <h5><b><%= komentar.izbor %> :<i class="fas fa-star" style="color: rgba(255, 217, 0, 0.884)"></i><i class="fas fa-star" style="color: rgba(255, 217, 0, 0.884)"></i><i class="fas fa-star" style="color: rgba(255, 217, 0, 0.884)"></i><i class="fas fa-star" style="color: rgba(255, 217, 0, 0.884)"></i></b></h5>
+                        <%} else if (komentar.ocena==3){%>
+                          <h5><b><%= komentar.izbor %> :<i class="fas fa-star" style="color: rgba(218, 165, 32, 0.842);"></i><i class="fas fa-star" style="color: rgba(218, 165, 32, 0.842);"></i><i class="fas fa-star" style="color: rgba(218, 165, 32, 0.842);"></i></b></h5>
+                        <%} else if (komentar.ocena==2){%>
+                          <h5><b><%= komentar.izbor %> :<i class="fas fa-star" style="color: rgba(181, 206, 42, 0.596);"></i><i class="fas fa-star" style="color: rgba(181, 206, 42, 0.596);"></i></b></h5>
+                        <%} else {%>
+                          <h5><b><%= komentar.izbor %> :<i class="fas fa-star" style="color: rgba(153, 205, 50, 0.473);"></i></b></h5>
+                        <%}%>
+                        
+                      </div>
+                        <div class="card-body" style="border: 1px solid black; background-color:lightgray;">
+                          <h6 style="color: darkcyan;"><%= komentar.ime %> (<%= komentar.email %>) :</h6> <h6 style="color: black;"><%= komentar.sadrzaj %></h6> 
+                        </div>
+                        <div class="card-footer">
+                          <%= komentar.date%>
+                        </div>
+                      </div>
+                      <br>
+                    <% });  %>
+            <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Komentar:</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <form action="/komentar" method="POST">
+                    <div class="form-group">
+                      <input type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email"
+                        value="<%=email%>">
+                    </div>
+                    <div class="form-group">
+                      <input type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="ime"
+                        value="<%= name %>">
+                    </div>
+                    <div class="form-group">
+                      <input type="hidden" name="izbor" value="Djordje Krstić">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleTextarea">Sadržaj komentara</label>
+                      <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Unesite vaš komentar"
+                        name="sadrzaj"></textarea>
+                    </div>
+                    <fieldset class="form-group">
+                      <label for="customRange1">Ocena(1-5)</label>
+                      <p style="padding-bottom: 0px;">1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; 2
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;3
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 4
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 5</p>
+                      <input type="range" min="1" max="5" value="5" class="custom-range" id="customRange1" name="ocena">
+                    </fieldset>
+                    <button type="submit" class="btn btn-primary" style="margin:auto; display:block">Pošalji</button>
+                    </fieldset>
+                  </form>
+            
+            
+            
+            
+                </div>
+            
+              </div>
+            </div>
+            </div>
+            
+            <div class="text-center">
+              <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm"
+                style="background-color:darkcyan">Dodajte komentar</a>
+            </div>
+            
+          

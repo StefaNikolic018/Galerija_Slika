@@ -1,0 +1,44 @@
+<ul class="navbar navbar-fixed-top" style="border: solid gray 1px;background-color: gray; ">
+  <li class="nav-item col-2">
+    <a class="btn btn-secondary" href="/paja" style="color:black">Paja Jovanović</a>
+  </li>
+  <li class="nav-item col-2">
+    <a class="btn btn-secondary" href="/uros" style="color:black">Uroš Predić</a>
+  </li>
+  <li class="nav-item col-2">
+    <a class="btn btn-secondary" href="/stevan" style="color:black">Stevan Aleksić</a>
+  </li>
+  <li class="nav-item col-2">
+      <a class="btn btn-secondary" href="/djordje" style="color:black">Djordje Krstić</a>
+  </li>
+  <li class="nav-item col-2">
+    <%= name %>
+  </li>
+  <li class="nav-item col-2">
+      <a href="/users/logout" class="btn btn-danger" style="color:black"><i class="fas fa-sign-out-alt"></i>Izlogujte se</a>
+  </li>
+</ul>
+  <%- include ('./partials/messages') %>
+  <div id="myTabContent" class="tab-content" style="border: 1px white solid;">
+    <div class="tab-pane fade show active" id="paja">
+      <div class="card mb-3">
+        <h3 class="card-header;">O nama</h3>
+        <div class="card-body">
+          <h5 class="card-title">Srpski velikani</h5>
+          <h6 class="card-subtitle text-muted">Predstavnici Srpske tradicije u svetu</h6>
+        </div>
+        <img style="height: 650px; width: 65%; display: block; margin:auto; border:2px solid black;" src="https://www.opanak.rs/wp-content/uploads/2017/11/21686471_1383495171699442_3085901954447168008_n.jpg" alt="Kartografija"> <p class="text-center">Izvor: Facebook (<a href="https://www.facebook.com/kartografijaD/" target="_blank">Kartografija</a>)</p>
+        <div class="card-body">
+          <p class="card-text">Nekolicina srpskih velikana izvučena iz dubokog šešira prepunog ne manje važnih predstavnika srpske kulture u svetu:</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><a href="https://sr.wikipedia.org/wiki/%D0%9F%D0%B0%D1%98%D0%B0_%D0%88%D0%BE%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%9B" target="_blank" style="text-decoration: none;">Paja Jovanović</a></li>
+          <li class="list-group-item"><a href="https://sr.wikipedia.org/wiki/%D0%A3%D1%80%D0%BE%D1%88_%D0%9F%D1%80%D0%B5%D0%B4%D0%B8%D1%9B" target="_blank" style="text-decoration: none;">Uroš Predić</a></li>
+          <li class="list-group-item"><a href="https://sr.wikipedia.org/wiki/%D0%A1%D0%B0%D0%B2%D0%B0_%D0%A8%D1%83%D0%BC%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%9B" target="_blank"  style="text-decoration: none;">Sava Šumanović</a></li>
+          <li class="list-group-item"><a href="https://sr.wikipedia.org/wiki/%D0%89%D1%83%D0%B1%D0%B0_%D0%9F%D0%BE%D0%BF%D0%BE%D0%B2%D0%B8%D1%9B_(%D1%81%D0%BB%D0%B8%D0%BA%D0%B0%D1%80)" target="_blank"  style="text-decoration: none;">Ljuba Popović</a></li>
+        </ul>
+        <div class="card-body">
+          <a href="https://sr.wikipedia.org/wiki/%D0%A1%D1%80%D0%BF%D1%81%D0%BA%D0%BE_%D1%81%D0%BB%D0%B8%D0%BA%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%BE" target="_blank" class="card-link">Saznajte više o sprskom slikarstvu</a>
+        </div>
+      </div>
+    </div>
