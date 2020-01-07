@@ -130,12 +130,7 @@
                 </div>
                 </div>
                 <h2 class="text-center" style="font-family:Georgia, 'Times New Roman', Times, serif;">Komentari:</h2>
-                <% komentari.forEach(function(komentar) {
-                  if(komentar.izbor== "Stevan Aleksić" || komentar.izbor== "Spaljivanje mošti Svetog Save na Vračaru" 
-                  || komentar.izbor== "Sveti Georgije ubiva aždahu" 
-                  || komentar.izbor== "Andjeo" 
-                  || komentar.izbor== "Autoportret u kafani" || komentar.izbor== "Autoportret u kafani II" || komentar.izbor== "Golgota" 
-                  || komentar.izbor== "Veseli Banaćanin" ) { %>
+                <% komentari.forEach(function(komentar) { %>
                 <div class="card">            
                         <div class="card-title; text-center">
                           <% if (komentar.ocena==5){ %>
@@ -159,7 +154,7 @@
                           </div>
                         </div>
                         <br>
-                      <% }});  %>
+                      <% });  %>
                               <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog" role="document">
