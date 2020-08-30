@@ -125,18 +125,18 @@
                               </div>
                               <fieldset class="form-group">
                                 <label for="customRange1">Ocena(1-5)</label>
-                                <p style="padding-bottom: 0px;">1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                  &nbsp; &nbsp; &nbsp; 2
-                                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                  &nbsp;3
-                                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 4
-                                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 5</p>
-                                <input type="range" min="1" max="5" value="5" class="custom-range" id="customRange1" name="ocena">
+                                <p style="padding-bottom: 0px;" class="text-center"><output name="amount" id="amount" for="rangeInput">5</output></p>
+                                <input type="range" id="rangeInput" min="1" max="5" value="5" class="custom-range" name="ocena" oninput="amount.value=rangeInput.value">
                               </fieldset>
                               <button type="submit" class="btn btn-primary" style="margin:auto; display:block">Pošalji</button>
                               </fieldset>
                             </form>
-                      
+                                  <!-- 1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                  &nbsp; &nbsp; &nbsp; 2
+                                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                  &nbsp;3
+                                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 4
+                                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 5                       -->
                       
                       
                       
