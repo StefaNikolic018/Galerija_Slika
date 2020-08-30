@@ -1,23 +1,53 @@
-<ul class="navbar">
-  <li class="nav-item col-2">
-    <a class="btn btn-secondary" href="/paja" style="color:black">Paja Jovanović</a>
-  </li>
-  <li class="nav-item col-2">
-    <a class="btn btn-secondary" href="/uros" style="color:black">Uroš Predić</a>
-  </li>
-  <li class="nav-item col-2">
-    <a class="btn btn-dark" href="/stevan" style="color:black">Stevan Aleksić</a>
-  </li>
-  <li class="nav-item col-2">
-      <a class="btn btn-secondary" href="/djordje" style="color:black">Djordje Krstić</a>
-  </li>
-  <li class="nav-item col-2">
-    <%= name %>
-  </li>
-  <li class="nav-item col-2">
-      <a href="/users/logout" class="btn btn-danger" style="color:black"><i class="fas fa-sign-out-alt"></i>Izlogujte se</a>
-  </li>
-</ul>
+<!-- NAVBAR START -->
+<nav class="navbar navbar-expand-lg bg-light rounded">
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navcol"
+  >
+    <span class="navbar-toggler-icon">
+      <i class="fas fa-hamburger" style="font-size: 25px; color: #b7d5d4"></i>
+    </span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navcol">
+    <ul class="navbar-nav mr-auto mt-1">
+      <li class="nav-item mr-3 mb-1">
+        <a class="btn btn-secondary" href="/paja" style="color: black"
+          >Paja Jovanović</a
+        >
+      </li>
+      <li class="nav-item mr-3 mb-1">
+        <a class="btn btn-secondary" href="/uros" style="color: black"
+          >Uroš Predić</a
+        >
+      </li>
+      <li class="nav-item mr-3 mb-1">
+        <a class="btn btn-light" href="/stevan" style="color: black"
+          >Stevan Aleksić</a
+        >
+      </li>
+      <li class="nav-item mr-3 mb-1">
+        <a class="btn btn-secondary" href="/djordje" style="color: black"
+          >Djordje Krstić</a
+        >
+      </li>
+    </ul>
+    <span class="navbar-text float-right">
+      <li class="nav-item btn btn-light"><%= name %></li>
+      <li class="nav-item btn btn-danger">
+        <a
+          href="/users/logout""
+          style="color: black"
+        >
+          <i class="fas fa-sign-out-alt"></i>Izlogujte se</a
+        >
+      </li>
+    </span>
+  </div>
+</nav>
+<!-- NAVBAR END -->
 <%- include ('./partials/messages') %>
       <div id="myTabContent" class="tab-content">
               <div class="tab-pane fade show active" id="paja" style="border: 1px white solid;">
@@ -27,7 +57,7 @@
                     <h5 class="card-title">Jedan od najznačajnijih srpskih slikara sa početka 20. veka</h5>
                     <h6 class="card-subtitle text-muted">Izmedju ostalog se bavio ikonopisanjem i živopisanjem Crkvi po ugledu na svog prijatelja Uroša Predića</h6>
                   </div>
-                  <img style="height: 475px; width: 30%; margin: auto; display: block; border:2px solid black;" src="http://riznicasrpska.net/fotografije/Slikari/Stevan_Aleksic_(1876-1923).png" alt="Stevan Aleksić">
+                  <img style="max-height: 475px; max-width: 30%; margin: auto; display: block; border:2px solid black;" class="img img-responsive" src="http://riznicasrpska.net/fotografije/Slikari/Stevan_Aleksic_(1876-1923).png" alt="Stevan Aleksić">
                   <div class="card-body">
                     <p class="card-text; text-center">Stevan Aleksić (Arad, 23. decembar 1876 - Jaša Tomić(Modoš), 2. novembar 1923)</p>
                   </div>
@@ -70,50 +100,50 @@
                   <!-- The slideshow -->
                   <div class="carousel-inner" style="display:block; margin: auto;">
                       <div class="carousel-item active">
-                          <a href="/slika/spaljivanjemostijusvetogsavenavracaru"><img src="https://www.tozlumikrofon.com/wp-content/uploads/2018/05/sirplar.png" style="display:block; margin: auto;height: 600px;"alt="Spaljivanje mošti Svetog Save na Vračaru">
-                      </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                          <a href="/slika/spaljivanjemostijusvetogsavenavracaru"><img src="https://www.tozlumikrofon.com/wp-content/uploads/2018/05/sirplar.png" style="display:block; margin: auto;max-height: 600px;" class="img img-fluid" alt="Spaljivanje mošti Svetog Save na Vračaru">
+                      </a><div class="carousel-caption d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
                             <h5>Spaljivanje mošti Svetog Save na Vračaru</h5>
                             <p>Verujem najpoznatije delo pomenutog slikara</p>
                           </div>
                         </div>
                     <div class="carousel-item">
-                      <a href="/slika/svetigeorgijeubivaazdahu"><img src="https://i.pinimg.com/originals/1a/4f/da/1a4fdacd5588ba0de762d83b351dc421.jpg" alt="Sveti Georgije ubiva aždahu" style="display:block; margin:auto;height: 600px;">
-                      </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                      <a href="/slika/svetigeorgijeubivaazdahu"><img src="https://i.pinimg.com/originals/1a/4f/da/1a4fdacd5588ba0de762d83b351dc421.jpg" alt="Sveti Georgije ubiva aždahu" style="display:block; margin:auto;max-height: 600px;" class="img img-fluid" >
+                      </a><div class="carousel-caption d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
                           <h5>Sveti Georgije ubiva aždahu</h5>
                           <p>Po ugledu na Uroša Predića koji ima istoimeno delo ali sa različitim motivima</p>
                       </div>
                     </div>
                     <div class="carousel-item">
-                        <a href="/slika/andjeo"><img src="https://kultivisise.rs/wp-content/uploads/2017/03/Stevalexangel-1.jpg" style="display:block; margin: auto;height: 600px;"alt="Andjeo">
-                        </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                        <a href="/slika/andjeo"><img src="https://kultivisise.rs/wp-content/uploads/2017/03/Stevalexangel-1.jpg" style="display:block; margin: auto;max-height: 600px;" class="img img-fluid" alt="Andjeo">
+                        </a><div class="carousel-caption d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
                           <h5>Andjeo</h5>
                           <p>Kao dokazani ikonopisac, svoju inspiraciju često nalazi u Crkvi</p>
                         </div>
                       </div>
                         <div class="carousel-item">
-                            <a href="/slika/autoportretukafani"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/S_Aleksic_autoportret_u_kafani_1901.jpg" style="display:block; margin: auto;height: 600px;"alt="Autoportret u kafani">
-                            </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                            <a href="/slika/autoportretukafani"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/S_Aleksic_autoportret_u_kafani_1901.jpg" style="display:block; margin: auto;max-height: 600px;" class="img img-fluid" alt="Autoportret u kafani">
+                            </a><div class="carousel-caption d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
                               <h5>Autoportret u kafani</h5>
                               <p>Jedan od njegovih unikatnih autoportreta, koji u sebi često nose simbole smrti</p>
                             </div>
                           </div>
                           <div class="carousel-item">
-                              <a href="/slika/veselibanacanin"><img src="http://riznicasrpska.net/fotografije/Umetnicke_slike/Stevan_Aleksic_-_Veseli_Banacani.jpg" style="display:block; margin: auto;height: 600px;"alt="Veseli Banaćanin">
-                              </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                              <a href="/slika/veselibanacanin"><img src="http://riznicasrpska.net/fotografije/Umetnicke_slike/Stevan_Aleksic_-_Veseli_Banacani.jpg" style="display:block; margin: auto;max-height: 600px;" class="img img-fluid" alt="Veseli Banaćanin">
+                              </a><div class="carousel-caption d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
                                 <h5>Veseli Banaćanin</h5>
                                 <p>Prikaz kulture Banata, uz vino i rakiju tu se da videti i gospodin koji svira gajde</p>
                               </div>
                             </div>
                             <div class="carousel-item">
-                                <a href="/slika/autoportretukafani2"><img src="https://i1.wp.com/www.pancevo.city/wp-content/uploads/2019/07/Slika-1..jpg?w=900&ssl=1" style="display:block; margin: auto;height: 600px;"alt="Autoportret u kafani II">
-                                </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                                <a href="/slika/autoportretukafani2"><img src="https://i1.wp.com/www.pancevo.city/wp-content/uploads/2019/07/Slika-1..jpg?w=900&ssl=1" style="display:block; margin: auto;max-height: 600px;" class="img img-fluid" alt="Autoportret u kafani II">
+                                </a><div class="carousel-caption d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
                                   <h5>Autoportret u kafani II</h5>
                                   <p>Drugi autoportret u kafani koji u sebi sadrži simbole smrti</p>
                                 </div>
                               </div>
                                 <div class="carousel-item">
-                                    <a href="/slika/golgota"><img src="https://static.kupindoslike.com/GOLGOTA-1918-rad-Stevana-Aleksica-1876-1923-_slika_O_64727199.jpg" style="display:block; margin: auto;height: 600px;"alt="Golgota">
-                                    </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                                    <a href="/slika/golgota"><img src="https://static.kupindoslike.com/GOLGOTA-1918-rad-Stevana-Aleksica-1876-1923-_slika_O_64727199.jpg" style="display:block; margin: auto;max-height: 600px;" class="img img-fluid" alt="Golgota">
+                                    </a><div class="carousel-caption d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
                                       <h5>Golgota</h5>
                                       <p>Raspeće Isusa Hrista na Golgoti</p>
                                     </div>

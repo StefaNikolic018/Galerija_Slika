@@ -1,23 +1,53 @@
-<ul class="navbar navbar-fixed-top" style="border: solid gray 1px;background-color: gray; ">
-  <li class="nav-item col-2">
-    <a class="btn btn-secondary" href="/paja" style="color:black">Paja Jovanović</a>
-  </li>
-  <li class="nav-item col-2">
-    <a class="btn btn-secondary" href="/uros" style="color:black">Uroš Predić</a>
-  </li>
-  <li class="nav-item col-2">
-    <a class="btn btn-secondary" href="/stevan" style="color:black">Stevan Aleksić</a>
-  </li>
-  <li class="nav-item col-2">
-      <a class="btn btn-secondary" href="/djordje" style="color:black">Djordje Krstić</a>
-  </li>
-  <li class="nav-item col-2">
-    <%= name %>
-  </li>
-  <li class="nav-item col-2">
-      <a href="/users/logout" class="btn btn-danger" style="color:black"><i class="fas fa-sign-out-alt"></i>Izlogujte se</a>
-  </li>
-</ul>
+<!-- NAVBAR START -->
+<nav class="navbar navbar-expand-lg bg-light rounded">
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navcol"
+  >
+    <span class="navbar-toggler-icon">
+      <i class="fas fa-hamburger" style="font-size: 25px; color: #b7d5d4"></i>
+    </span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navcol">
+    <ul class="navbar-nav mr-auto mt-1">
+      <li class="nav-item mr-3 mb-1">
+        <a class="btn btn-secondary" href="/paja" style="color: black"
+          >Paja Jovanović</a
+        >
+      </li>
+      <li class="nav-item mr-3 mb-1">
+        <a class="btn btn-secondary" href="/uros" style="color: black"
+          >Uroš Predić</a
+        >
+      </li>
+      <li class="nav-item mr-3 mb-1">
+        <a class="btn btn-secondary" href="/stevan" style="color: black"
+          >Stevan Aleksić</a
+        >
+      </li>
+      <li class="nav-item mr-3 mb-1">
+        <a class="btn btn-secondary" href="/djordje" style="color: black"
+          >Djordje Krstić</a
+        >
+      </li>
+    </ul>
+    <span class="navbar-text float-right">
+      <li class="nav-item btn btn-light"><%= name %></li>
+      <li class="nav-item btn btn-danger">
+        <a
+          href="/users/logout""
+          style="color: black"
+        >
+          <i class="fas fa-sign-out-alt"></i>Izlogujte se</a
+        >
+      </li>
+    </span>
+  </div>
+</nav>
+<!-- NAVBAR END -->
   <%- include ('./partials/messages') %>
   <div id="myTabContent" class="tab-content" style="border: 1px white solid;">
     <div class="tab-pane fade show active" id="paja">
@@ -27,7 +57,7 @@
           <h5 class="card-title">Srpski velikani</h5>
           <h6 class="card-subtitle text-muted">Predstavnici Srpske tradicije u svetu</h6>
         </div>
-        <img style="height: 650px; width: 65%; display: block; margin:auto; border:2px solid black;" src="https://www.opanak.rs/wp-content/uploads/2017/11/21686471_1383495171699442_3085901954447168008_n.jpg" alt="Kartografija"> <p class="text-center">Izvor: Facebook (<a href="https://www.facebook.com/kartografijaD/" target="_blank">Kartografija</a>)</p>
+        <img style="max-height: 650px; max-width: 65%; display: block; margin:auto; border:2px solid black;" class="img img-responsive" src="https://www.opanak.rs/wp-content/uploads/2017/11/21686471_1383495171699442_3085901954447168008_n.jpg" alt="Kartografija"> <p class="text-center">Izvor: Facebook (<a href="https://www.facebook.com/kartografijaD/" target="_blank">Kartografija</a>)</p>
         <div class="card-body">
           <p class="card-text">Nekolicina srpskih velikana izvučena iz dubokog šešira prepunog ne manje važnih predstavnika srpske kulture u svetu:</p>
         </div>

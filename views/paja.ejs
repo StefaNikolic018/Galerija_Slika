@@ -1,23 +1,53 @@
-<ul class="navbar">
-  <li class="nav-item col-2">
-    <a class="btn btn-dark" href="/paja" style="color:black">Paja Jovanović</a>
-  </li>
-  <li class="nav-item col-2">
-    <a class="btn btn-secondary" href="/uros" style="color:black">Uroš Predić</a>
-  </li>
-  <li class="nav-item col-2">
-    <a class="btn btn-secondary" href="/stevan" style="color:black">Stevan Aleksić</a>
-  </li>
-  <li class="nav-item col-2">
-      <a class="btn btn-secondary" href="/djordje" style="color:black">Djordje Krstić</a>
-  </li>
-  <li class="nav-item col-2">
-    <%= name %>
-  </li>
-  <li class="nav-item col-2">
-      <a href="/users/logout" class="btn btn-danger" style="color:black"><i class="fas fa-sign-out-alt"></i>Izlogujte se</a>
-  </li>
-</ul>
+<!-- NAVBAR START -->
+<nav class="navbar navbar-expand-lg bg-light rounded">
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navcol"
+  >
+    <span class="navbar-toggler-icon">
+      <i class="fas fa-hamburger" style="font-size: 25px; color: #b7d5d4"></i>
+    </span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navcol">
+    <ul class="navbar-nav mr-auto mt-1">
+      <li class="nav-item mr-3 mb-1">
+        <a class="btn btn-light" href="/paja" style="color: black"
+          >Paja Jovanović</a
+        >
+      </li>
+      <li class="nav-item mr-3 mb-1">
+        <a class="btn btn-secondary" href="/uros" style="color: black"
+          >Uroš Predić</a
+        >
+      </li>
+      <li class="nav-item mr-3 mb-1">
+        <a class="btn btn-secondary" href="/stevan" style="color: black"
+          >Stevan Aleksić</a
+        >
+      </li>
+      <li class="nav-item mr-3 mb-1">
+        <a class="btn btn-secondary" href="/djordje" style="color: black"
+          >Djordje Krstić</a
+        >
+      </li>
+    </ul>
+    <span class="navbar-text float-right">
+      <li class="nav-item btn btn-light"><%= name %></li>
+      <li class="nav-item btn btn-danger">
+        <a
+          href="/users/logout""
+          style="color: black"
+        >
+          <i class="fas fa-sign-out-alt"></i>Izlogujte se</a
+        >
+      </li>
+    </span>
+  </div>
+</nav>
+<!-- NAVBAR END -->
 <%- include ('./partials/messages') %>
 <div id="myTabContent" class="tab-content">
         <div class="tab-pane fade show active" id="paja" style="border: 1px white solid;">
@@ -27,7 +57,7 @@
               <h5 class="card-title">Predstavnik akademskog "idealističkog" realizma</h5>
               <h6 class="card-subtitle text-muted">Ubraja se u sto najznamenitijih Srba</h6>
             </div>
-            <img style="height: 475px; width: 35%; margin: auto; display: block;  border:2px solid black;" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/PajaJovanovic.jpg" alt="Paja">
+            <img style="max-height: 475px; max-width: 35%; margin: auto; display: block;  border:2px solid black;" class="img img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/PajaJovanovic.jpg" alt="Paja">
             <div class="card-body">
               <p class="card-text; text-center">Pavle Paja Jovanović (Vršac, 16. jun 1859 - Beč, 30. novembar 1957)</p>
             </div>
@@ -74,64 +104,64 @@
             <!-- The slideshow -->
             <div class="carousel-inner" style="display:block; margin: auto;">
                 <div class="carousel-item active">
-                   <a href='/slika/seobasrba' ><img src="https://upload.wikimedia.org/wikipedia/sr/thumb/6/6c/Seoba_Srba.jpg/1024px-Seoba_Srba.jpg" style="display:block; margin: auto;height: 600px;"alt="Seoba Srba"></a> 
-                    <div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                   <a href='/slika/seobasrba' ><img src="https://upload.wikimedia.org/wikipedia/sr/thumb/6/6c/Seoba_Srba.jpg/1024px-Seoba_Srba.jpg" style="display:block; margin: auto;max-height: 600px;" class ="img img-fluid" alt="Seoba Srba"></a> 
+                    <div class="carousel-caption d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
                       <h5>Seoba Srba</h5>
                       <p>Verujem najpoznatije delo pomenutog slikara</p>
                     </div>
                   </div>
               <div class="carousel-item">
-                <a href='/slika/krunisanjecaradusana'><img src="https://upload.wikimedia.org/wikipedia/sr/thumb/1/1d/Paja_JovanoviKrunisanje_Cara_Dusana_2.jpg/1280px-Paja_JovanoviKrunisanje_Cara_Dusana_2.jpg" alt="Krunisanje cara Dušana" style="display:block; margin:auto;height: 600px;">
-                </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                <a href='/slika/krunisanjecaradusana'><img src="https://upload.wikimedia.org/wikipedia/sr/thumb/1/1d/Paja_JovanoviKrunisanje_Cara_Dusana_2.jpg/1280px-Paja_JovanoviKrunisanje_Cara_Dusana_2.jpg" alt="Krunisanje cara Dušana" style="display:block; margin:auto;max-height: 600px;" class ="img img-fluid" >
+                </a><div class="carousel-caption d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
                     <h5>Krunisanje cara Dušana</h5>
                     <p>Pored ovog dela, takodje je interesantno i delo "Ženidba cara Dušana"</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <a href='/slika/krotiteljzmija'> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Paja_Jovanovi%C4%87_-_Snake_tamer_%281887%29.jpg/800px-Paja_Jovanovi%C4%87_-_Snake_tamer_%281887%29.jpg" style="display:block; margin: auto;height: 600px;"alt="Krotitelj zmija">
-                 </a> <div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                <a href='/slika/krotiteljzmija'> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Paja_Jovanovi%C4%87_-_Snake_tamer_%281887%29.jpg/800px-Paja_Jovanovi%C4%87_-_Snake_tamer_%281887%29.jpg" style="display:block; margin: auto;max-height: 600px;" class ="img img-fluid" alt="Krotitelj zmija">
+                 </a> <div class="carousel-caption d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
                     <h5>Krotitelj zmija</h5>
                     <p>Osmanlije na prostoru Humskog poluostrva</p>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <a href='/slika/borbapetlova'> <img src="https://upload.wikimedia.org/wikipedia/sr/e/ec/Jovanovic_Borba_petlova.jpg" style="display:block; margin: auto;height: 600px;"alt="Borba petlova">
-                  </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                  <a href='/slika/borbapetlova'> <img src="https://upload.wikimedia.org/wikipedia/sr/e/ec/Jovanovic_Borba_petlova.jpg" style="display:block; margin: auto;max-height: 600px;" class ="img img-fluid" alt="Borba petlova">
+                  </a><div class="carousel-caption d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
                       <h5>Borba petlova</h5>
                       <p>Kulturološka pojava na našim prostorima</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                      <a href='/slika/izdajica'><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Paja_Jovanovi%C4%87_-_The_traitor_1885%E2%80%931890.jpg/1280px-Paja_Jovanovi%C4%87_-_The_traitor_1885%E2%80%931890.jpg" style="display:block; margin: auto;height: 600px;"alt="Izdajica">
-                      </a> <div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                      <a href='/slika/izdajica'><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Paja_Jovanovi%C4%87_-_The_traitor_1885%E2%80%931890.jpg/1280px-Paja_Jovanovi%C4%87_-_The_traitor_1885%E2%80%931890.jpg" style="display:block; margin: auto;max-height: 600px;" class ="img img-fluid" alt="Izdajica">
+                      </a> <div class="carousel-caption d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
                         <h5>Izdajica</h5>
                         <p>Nalazi se u muzeju Viktorije i Alberta, Australija</p>
                       </div>
                     </div>
                     <div class="carousel-item">
-                      <a href='/slika/zenidbacaradusana'> <img src="https://upload.wikimedia.org/wikipedia/sr/4/41/Zenidba_cara_Dusana.jpg" style="display:block; margin: auto;height: 600px;"alt="Ženidba cara Dušana">
-                        </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                      <a href='/slika/zenidbacaradusana'> <img src="https://upload.wikimedia.org/wikipedia/sr/4/41/Zenidba_cara_Dusana.jpg" style="display:block; margin: auto;max-height: 600px;" class ="img img-fluid" alt="Ženidba cara Dušana">
+                        </a><div class="carousel-caption d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
                           <h5>Ženidba cara Dušana</h5>
                           <p>Već pomenuta, iz istog perioda kao i "Krunisanje cara Dušana"</p>
                         </div>
                       </div>
                       <div class="carousel-item">
-                        <a href='/slika/bitkauteutoburskojsumi'> <img src="http://4.bp.blogspot.com/-N095rDCTSjA/VcD-kXJozNI/AAAAAAAABfc/TJhiATIptyg/s1600/Furor-Teutonicus_heliogravu.jpg" style="display:block; margin: auto;height: 600px;"alt="Bitka u Teutoburškoj šumi">
-                         </a> <div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                        <a href='/slika/bitkauteutoburskojsumi'> <img src="http://4.bp.blogspot.com/-N095rDCTSjA/VcD-kXJozNI/AAAAAAAABfc/TJhiATIptyg/s1600/Furor-Teutonicus_heliogravu.jpg" style="display:block; margin: auto;max-height: 600px;" class ="img img-fluid" alt="Bitka u Teutoburškoj šumi">
+                         </a> <div class="carousel-caption d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
                             <h5>Bitka u Teutoburškoj šumi</h5>
                             <p>Veličine 20 kvadratnih metara, zadnji put vidjena 1909. godine</p>
                           </div>
                         </div>
                         <div class="carousel-item">
-                          <a href='/slika/portretkraljaaleksandra'> <img src="https://upload.wikimedia.org/wikipedia/sr/f/f5/AleksandarI.jpg" style="display:block; margin: auto;height: 600px;"alt="Portret kralja Aleksandra I">
-                            </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                          <a href='/slika/portretkraljaaleksandra'> <img src="https://upload.wikimedia.org/wikipedia/sr/f/f5/AleksandarI.jpg" style="display:block; margin: auto;max-height: 600px;" class ="img img-fluid" alt="Portret kralja Aleksandra I">
+                            </a><div class="carousel-caption d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
                               <h5>Portret kralja Aleksandra I</h5>
                               <p>U punoj veličini</p>
                             </div>
                           </div>
                           <div class="carousel-item">
-                            <a href='/slika/takovskiustanak'> <img src="https://upload.wikimedia.org/wikipedia/sr/2/22/Paja_Jovanovic-Takovski_ustanak.jpg" style="display:block; margin: auto;height: 600px;"alt="Takovski ustanak">
-                            </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                            <a href='/slika/takovskiustanak'> <img src="https://upload.wikimedia.org/wikipedia/sr/2/22/Paja_Jovanovic-Takovski_ustanak.jpg" style="display:block; margin: auto;max-height: 600px;" class ="img img-fluid" alt="Takovski ustanak">
+                            </a><div class="carousel-caption d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
                                 <h5>Takovski ustanak</h5>
                                 <p>Značajno delo vezano za kult predaka u Srbiji, obratite pažnju na podignutih 3 prsta</p>
                               </div>

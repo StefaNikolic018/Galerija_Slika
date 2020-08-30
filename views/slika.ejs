@@ -1,29 +1,59 @@
-<ul class="navbar">
-    <li class="nav-item col-2">
-      <a class="btn btn-secondary" href="/paja" style="color:black">Paja Jovanović</a>
-    </li>
-    <li class="nav-item col-2">
-      <a class="btn btn-secondary" href="/uros" style="color:black">Uroš Predić</a>
-    </li>
-    <li class="nav-item col-2">
-      <a class="btn btn-secondary" href="/stevan" style="color:black">Stevan Aleksić</a>
-    </li>
-    <li class="nav-item col-2">
-        <a class="btn btn-secondary" href="/djordje" style="color:black">Djordje Krstić</a>
-    </li>
-    <li class="nav-item col-2">
-      <%= name %>
-    </li>
-    <li class="nav-item col-2">
-        <a href="/users/logout" class="btn btn-danger" style="color:black"><i class="fas fa-sign-out-alt"></i>Izlogujte se</a>
-    </li>
-  </ul>
+<!-- NAVBAR START -->
+<nav class="navbar navbar-expand-lg bg-light rounded">
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navcol"
+  >
+    <span class="navbar-toggler-icon">
+      <i class="fas fa-hamburger" style="font-size: 25px; color: #b7d5d4"></i>
+    </span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navcol">
+    <ul class="navbar-nav mr-auto mt-1">
+      <li class="nav-item mr-3 mb-1">
+        <a class="btn btn-secondary" href="/paja" style="color: black"
+          >Paja Jovanović</a
+        >
+      </li>
+      <li class="nav-item mr-3 mb-1">
+        <a class="btn btn-secondary" href="/uros" style="color: black"
+          >Uroš Predić</a
+        >
+      </li>
+      <li class="nav-item mr-3 mb-1">
+        <a class="btn btn-secondary" href="/stevan" style="color: black"
+          >Stevan Aleksić</a
+        >
+      </li>
+      <li class="nav-item mr-3 mb-1">
+        <a class="btn btn-secondary" href="/djordje" style="color: black"
+          >Djordje Krstić</a
+        >
+      </li>
+    </ul>
+    <span class="navbar-text float-right">
+      <li class="nav-item btn btn-light"><%= name %></li>
+      <li class="nav-item btn btn-danger">
+        <a
+          href="/users/logout""
+          style="color: black"
+        >
+          <i class="fas fa-sign-out-alt"></i>Izlogujte se</a
+        >
+      </li>
+    </span>
+  </div>
+</nav>
+<!-- NAVBAR END -->
   <%- include ('./partials/messages') %>
   <div id="myTabContent" class="tab-content">
             <div id="demo" class="carousel slide" data-ride="carousel" style="border: 2px white solid; background-color: black;">
             <div class="carousel-inner" style="display:block; margin: auto;">
               <div class="carousel-item active" >
-                <img src = "<%= slika %>" style="display:block; margin: auto;height: 600px; border: black solid 5px;" alt="Seoba Srba">
+                <img src = "<%= slika %>" style="display:block; margin: auto;max-height: 600px; border: black solid 5px;" class="img img-fluid" alt="Seoba Srba">
                 <div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
                   <h5><%= izbor1 %></h5>
                 </div>

@@ -1,23 +1,53 @@
-<ul class="navbar">
-  <li class="nav-item col-2">
-    <a class="btn btn-secondary" href="/paja" style="color:black">Paja Jovanović</a>
-  </li>
-  <li class="nav-item col-2">
-    <a class="btn btn-secondary" href="/uros" style="color:black">Uroš Predić</a>
-  </li>
-  <li class="nav-item col-2">
-    <a class="btn btn-secondary" href="/stevan" style="color:black">Stevan Aleksić</a>
-  </li>
-  <li class="nav-item col-2">
-      <a class="btn btn-dark" href="/djordje" style="color:black">Djordje Krstić</a>
-  </li>
-  <li class="nav-item col-2">
-    <%= name %>
-  </li>
-  <li class="nav-item col-2">
-      <a href="/users/logout" class="btn btn-danger" style="color:black"><i class="fas fa-sign-out-alt"></i>Izlogujte se</a>
-  </li>
-</ul>
+<!-- NAVBAR START -->
+<nav class="navbar navbar-expand-lg bg-light rounded">
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navcol"
+  >
+    <span class="navbar-toggler-icon">
+      <i class="fas fa-hamburger" style="font-size: 25px; color: #b7d5d4"></i>
+    </span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navcol">
+    <ul class="navbar-nav mr-auto mt-1">
+      <li class="nav-item mr-3 mb-1">
+        <a class="btn btn-secondary" href="/paja" style="color: black"
+          >Paja Jovanović</a
+        >
+      </li>
+      <li class="nav-item mr-3 mb-1">
+        <a class="btn btn-secondary" href="/uros" style="color: black"
+          >Uroš Predić</a
+        >
+      </li>
+      <li class="nav-item mr-3 mb-1">
+        <a class="btn btn-secondary" href="/stevan" style="color: black"
+          >Stevan Aleksić</a
+        >
+      </li>
+      <li class="nav-item mr-3 mb-1">
+        <a class="btn btn-light" href="/djordje" style="color: black"
+          >Djordje Krstić</a
+        >
+      </li>
+    </ul>
+    <span class="navbar-text float-right">
+      <li class="nav-item btn btn-light"><%= name %></li>
+      <li class="nav-item btn btn-danger">
+        <a
+          href="/users/logout""
+          style="color: black"
+        >
+          <i class="fas fa-sign-out-alt"></i>Izlogujte se</a
+        >
+      </li>
+    </span>
+  </div>
+</nav>
+<!-- NAVBAR END -->
 <%- include ('./partials/messages') %>
       <div id="myTabContent" class="tab-content">
               <div class="tab-pane fade show active" id="paja" style="border: 1px white solid;">
@@ -27,7 +57,7 @@
                     <h5 class="card-title">Jedan od najpoznatijih srpskih slikara realista</h5>
                     <h6 class="card-subtitle text-muted">Ujedno i školovani Bogoslov</h6>
                   </div>
-                  <img style="height: 475px; width: 30%; margin: auto; display: block; border:2px solid black;" src="http://riznicasrpska.net/fotografije/Slikari/Djordje_Krstic_(1851-1907).jpg" alt="Djordje Krstić">
+                  <img style="max-height: 475px; max-width: 30%; margin: auto; display: block; border:2px solid black;" class="img img-responsive" src="http://riznicasrpska.net/fotografije/Slikari/Djordje_Krstic_(1851-1907).jpg" alt="Djordje Krstić">
                   <div class="card-body">
                     <p class="card-text; text-center">Djordje Krstić (Stara Kanjiža, 19. april 1851-Beograd,30. oktobar 1907)</p>
                   </div>
@@ -71,64 +101,64 @@
                   <!-- The slideshow -->
                   <div class="carousel-inner" style="display:block; margin: auto;">
                       <div class="carousel-item active">
-                          <a href="/slika/celekula"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/%C4%90.Krsti%C4%87_Cele_Kula_1883.jpg" style="display:block; margin: auto;height: 600px;"alt="Ćele Kula">
-                          </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                          <a href="/slika/celekula"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/%C4%90.Krsti%C4%87_Cele_Kula_1883.jpg" style="display:block; margin: auto;max-height: 600px;" class="img img-fluid" alt="Ćele Kula">
+                          </a><div class="carousel-caption d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
                             <h5>Ćele Kula</h5>
                             <p>Nekada nije imala ni krov, u trenutku nastanka slike jeste, a danas se nalazi u zgradi koja je štiti od vremenskih nepogoda</p>
                           </div>
                         </div>
                     <div class="carousel-item">
-                      <a href="/slika/smrtknezalazara"><img src="http://riznicasrpska.net/fotografije/Umetnicke_slike/Djordje_Krstic_-_Smrt_Cara_Lazara,_1885._Vlasnistvo_Niske_eparhije.jpg" alt="Smrt kneza Lazara" style="display:block; margin:auto;height: 600px;">
-                      </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                      <a href="/slika/smrtknezalazara"><img src="http://riznicasrpska.net/fotografije/Umetnicke_slike/Djordje_Krstic_-_Smrt_Cara_Lazara,_1885._Vlasnistvo_Niske_eparhije.jpg" alt="Smrt kneza Lazara" style="display:block; margin:auto;max-height: 600px;" class="img img-fluid" >
+                      </a><div class="carousel-caption d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
                           <h5>Smrt kneza Lazara</h5>
                           <p>Ovo delo je vlasnistvo Niske eparhije</p>
                       </div>
                     </div>
                     <div class="carousel-item">
-                        <a href="/slika/naizvoru"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/%C4%90.Krsti%C4%87_Na_izvoru_1882.jpg" style="display:block; margin: auto;height: 600px;"alt="Na izvoru">
-                        </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                        <a href="/slika/naizvoru"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/%C4%90.Krsti%C4%87_Na_izvoru_1882.jpg" style="display:block; margin: auto;max-height: 600px;" class="img img-fluid" alt="Na izvoru">
+                        </a><div class="carousel-caption d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
                           <h5>Na izvoru</h5>
                           <p>Mlada dama u narodnoj nošnji, na zavodniku</p>
                         </div>
                       </div>
                       <div class="carousel-item">
-                          <a href="/slika/manastirstudenica"><img src="https://upload.wikimedia.org/wikipedia/sr/8/87/Krstic_studenica.jpg" style="display:block; margin: auto;height: 600px;"alt="Manastir Studenica">
-                          </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                          <a href="/slika/manastirstudenica"><img src="https://upload.wikimedia.org/wikipedia/sr/8/87/Krstic_studenica.jpg" style="display:block; margin: auto;max-height: 600px;" class="img img-fluid" alt="Manastir Studenica">
+                          </a><div class="carousel-caption d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
                             <h5>Manastir Studenica</h5>
                             <p>Kao školovani Bogoslov, inspiraciju je našao u srednjovekovnoj srpskoj arhitekturi</p>
                           </div>
                         </div>
                         <div class="carousel-item">
-                            <a href="/slika/gruzanka"><img src="https://ocdn.eu/pulscms-transforms/1/KBjk9lMaHR0cDovL29jZG4uZXUvaW1hZ2VzL3B1bHNjbXMvWkdVN01EQV8vNzY2Nzc4YzI0YWY4NjNiY2UyNGJhZjQ0NTE2ZDFjZmEuanBlZ5GTAs0C5ACBAAE" style="display:block; margin: auto;height: 600px;"alt="Gružanka">
-                            </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                            <a href="/slika/gruzanka"><img src="https://ocdn.eu/pulscms-transforms/1/KBjk9lMaHR0cDovL29jZG4uZXUvaW1hZ2VzL3B1bHNjbXMvWkdVN01EQV8vNzY2Nzc4YzI0YWY4NjNiY2UyNGJhZjQ0NTE2ZDFjZmEuanBlZ5GTAs0C5ACBAAE" style="display:block; margin: auto;max-height: 600px;" class="img img-fluid" alt="Gružanka">
+                            </a><div class="carousel-caption d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
                               <h5>Gružanka</h5>
                               <p>Gružanka sa detetom, na otvaranju Narodnog muzeja oduševila svet</p>
                             </div>
                           </div>
                           <div class="carousel-item">
-                              <a href="/slika/obretanjeglavesvetogknezalazara"><img src="https://facebookreporter.files.wordpress.com/2016/06/19sobretenje-glave-kneza-lazara-c491orc491e-krstic487.jpg" style="display:block; margin: auto;height: 600px;"alt="Obretenje glave Svetog kneza Lazara">
-                              <div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                              <a href="/slika/obretanjeglavesvetogknezalazara"><img src="https://facebookreporter.files.wordpress.com/2016/06/19sobretenje-glave-kneza-lazara-c491orc491e-krstic487.jpg" style="display:block; margin: auto;max-height: 600px;" class="img img-fluid" alt="Obretenje glave Svetog kneza Lazara">
+                              <div class="carousel-caption d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
                                 <h5>Obretenje glave Svetog kneza Lazara</h5>
                                 <p>Inspirisan braniteljem srpskog roda,slično delo kao "Smrt kneza Lazara"</p>
                               </div>
                             </div>
                             <div class="carousel-item">
-                                <a href="/slika/utopljenica"><img src="http://slikeiprilike.com/wp-content/uploads/2018/08/.Krstic%CC%81_Utopljenica-e1533667399599.jpg" style="display:block; margin: auto;height: 600px;"alt="Utopljenica">
-                                </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                                <a href="/slika/utopljenica"><img src="http://slikeiprilike.com/wp-content/uploads/2018/08/.Krstic%CC%81_Utopljenica-e1533667399599.jpg" style="display:block; margin: auto;max-height: 600px;" class="img img-fluid" alt="Utopljenica">
+                                </a><div class="carousel-caption d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
                                   <h5>Utopljenica</h5>
                                   <p>Pored dela "Pad Stalaća" jedna od stalnih postavki Narodnog muzeja</p>
                                 </div>
                               </div>
                               <div class="carousel-item">
-                                  <a href="/slika/padstalaca"><img src="http://slikeiprilike.com/wp-content/uploads/2018/08/viber-image1.jpg" style="display:block; margin: auto;height: 600px;"alt="Pad Stalaća">
-                                  </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                                  <a href="/slika/padstalaca"><img src="http://slikeiprilike.com/wp-content/uploads/2018/08/viber-image1.jpg" style="display:block; margin: auto;max-height: 600px;" class="img img-fluid" alt="Pad Stalaća">
+                                  </a><div class="carousel-caption d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
                                     <h5>Pad Stalaća</h5>
                                     <p>Pored dela "Utopljenica" jedna od stalnih postavki Narodnog muzeja</p>
                                   </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <a href="/slika/alegorijanaprviidrugisrpskiustanak"><img src="http://riznicasrpska.net/fotografije/Umetnicke_slike/Djordje_Krstic_-_Alegorija_na_I_i_II_srpski_ustanak_1904..jpg" style="display:block; margin: auto;height: 600px;"alt="Alegorija na I i II srpski ustanak">
-                                    </a><div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
+                                    <a href="/slika/alegorijanaprviidrugisrpskiustanak"><img src="http://riznicasrpska.net/fotografije/Umetnicke_slike/Djordje_Krstic_-_Alegorija_na_I_i_II_srpski_ustanak_1904..jpg" style="display:block; margin: auto;max-height: 600px;" class="img img-fluid" alt="Alegorija na I i II srpski ustanak">
+                                    </a><div class="carousel-caption d-md-block" style="background-color:rgba(0, 0, 0, 0.5);">
                                       <h5>Alegorija na I i II srpski ustanak</h5>
                                       <p>Zbirka galerije Matice srpske</p>
                                     </div>
